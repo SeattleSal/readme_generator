@@ -58,6 +58,12 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     console.log(`gonna be fun!`);
+    inquirer.prompt(questions)
+    .then(answers => console.log(answers))
+    .catch(error => {
+        if(error.isTtyError){ console.log("oops!")}
+        else {console.log("getting closer")}
+    })
 }
 
 // function call to initialize program
