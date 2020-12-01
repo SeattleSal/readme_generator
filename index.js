@@ -55,9 +55,14 @@ const questions = [
 function writeToFile(fileName, data) {
     // console.log(fileName);
     // console.log(data);
-    let rmText = 
+    fs.writeFile(fileName, generateReadMe(data), (err) =>
+    err ? console.log(err) : console.log('Success! README created!'));
+}
+
+function generateReadMe(data){
+  let rmText = 
   `README for ${data.username}
-  ## ${data.pname}
+  # ${data.pname}
   ## Table of Contents
   ## Description
   ${data.pdescription}
@@ -74,9 +79,7 @@ function writeToFile(fileName, data) {
   ${data.email}
   ## License
   ${data.pdescription}`;
-
-    fs.writeFile(fileName, rmText, (err) =>
-    err ? console.log(err) : console.log('Success! README created!'));
+  return rmText;
 }
 
 // function to initialize program

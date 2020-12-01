@@ -1,21 +1,18 @@
-README for seattle sal
-  ## readme stuff
-
+README for seattlesal
+  ## awesome
   ## Table of Contents
-
   ## Description
-
-  dlajfl;fjdkj
+  f;ldjfklnklnvlnwfhnorijglfjg
   ## Links
   ## Dependencies
-  The following commands should be run for dependencies: npm bla bla
+  The following commands should be run for dependencies: depeds
   ## Use
-  useful info
+  use it wisely
   ## Tests
   The following commands should be run for testing: testing 123
   ## How to Contribute
-  contribute good
+  stuff
   ## Contact
   sal@g
   ## License
-  dlajfl;fjdkj    
+  f;ldjfklnklnvlnwfhnorijglfjg
