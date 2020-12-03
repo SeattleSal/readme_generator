@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const fileName = "README.md"
+const generateMarkdown = require('./utils/generateMarkdown');
+const fileName = "README_OUTPUT.md"
 
 // array of questions for user
 const questions = [
@@ -54,32 +55,9 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     // console.log(fileName);
-    // console.log(data);
-    fs.writeFile(fileName, generateReadMe(data), (err) =>
+    // console.log(generateMarkdown(data));
+    fs.writeFile(fileName, generateMarkdown(data), (err) =>
     err ? console.log(err) : console.log('Success! README created!'));
-}
-
-function generateReadMe(data){
-  let rmText = 
-  `README for ${data.username}
-  # ${data.pname}
-  ## Table of Contents
-  ## Description
-  ${data.pdescription}
-  ## Links
-  ## Dependencies
-  The following commands should be run for dependencies: ${data.dependencies}
-  ## Use
-  ${data.repo}
-  ## Tests
-  The following commands should be run for testing: ${data.tests}
-  ## How to Contribute
-  ${data.contribute}
-  ## Contact
-  ${data.email}
-  ## License
-  ${data.pdescription}`;
-  return rmText;
 }
 
 // function to initialize program
