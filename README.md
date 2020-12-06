@@ -25,7 +25,7 @@ Invoke the application by using the following command:
 node index.js
 ```
 The user will then be prompted for inputs through the command line. See video for walkthrough:
-[![README Walkthrough](./assets/README_Generator_Walkthrough.gif)](https://drive.google.com/file/d/1KLoMAUtM56FYfUxA-nEtElN9BagG2me8/view)
+[![README Walkthrough](./assets/README_Generator_Walkthrough.gif)](https://drive.google.com/file/d/171IC3DSebE4sw0wJTJ3NFnrrcKF-ey3-/view)
 
 ## Link
 [Github Link](https://github.com/SeattleSal/readme_generator)
