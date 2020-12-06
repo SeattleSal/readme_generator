@@ -5,6 +5,7 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Example](#example)
 * [Link](#link)
 * [License](#license)
 
@@ -25,7 +26,13 @@ Invoke the application by using the following command:
 node index.js
 ```
 The user will then be prompted for inputs through the command line. See video for walkthrough:
+
 [![README Walkthrough](./assets/README_Generator_Walkthrough.gif)](https://drive.google.com/file/d/171IC3DSebE4sw0wJTJ3NFnrrcKF-ey3-/view)
+
+## Example
+Example of README output, click to see full README output example:
+
+[![Example README](./assets/readme_example.jpg)](./assets/README_OUTPUT.md)
 
 ## Link
 [Github Link](https://github.com/SeattleSal/readme_generator)
