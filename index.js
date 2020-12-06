@@ -47,8 +47,13 @@ const questions = [
         },
         {
           type: 'input',
+          message: 'What command should be run to start the application?',
+          name: 'start',
+        },
+        {
+          type: 'input',
           message: 'What does the user need to know about using the repo?',
-          name: 'repo',
+          name: 'use',
         },
         {
           type: 'input',

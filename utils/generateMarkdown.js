@@ -1,7 +1,8 @@
+const year = '2020';
+
 // function to generate markdown for README
 function generateMarkdown(data) {
 
-    // to do - get data license text
     let licensetext = licenses[data.license].content;
 
 return `
@@ -10,7 +11,8 @@ return `
 
 ## Table of Contents
 * [Description](#description)
-* [Installation](#installation_instructions)
+* [Dependencies](#dependencies)
+* [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -19,21 +21,32 @@ return `
 ## Description
 ${data.pdescription}
 
-## Installation_Instructions
-The following commands should be run for dependencies: ${data.dependencies}
+## Dependencies
+The following commands should be run for dependencies:
+\`\`\`bash
+${data.dependencies}
+\`\`\`
 
 ## Usage
-${data.repo}
+Run the application by using the following command:
+\`\`\`bash
+${data.start}
+\`\`\`
 
-## Contributing Guidelines
-${data.contribute}
+${data.use}
+
+## Contributing
+Guidelines for contributing: ${data.contribute}
 
 ## Tests
-The following commands should be run for testing: ${data.tests}
+The following commands should be run for testing: 
+\`\`\`bash
+${data.tests}
+\`\`\`
 
 ## Questions
-For additional questions please contact ${data.username} at ${data.email}
-Github Link: https://github.com/${data.username}
+* For additional questions please contact ${data.username} at ${data.email}
+* Github Link: https://github.com/${data.username}
 
 ## License
 ${licensetext}`;
@@ -46,7 +59,7 @@ const licenses = [
         content: `
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [${year}] [fullname]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
