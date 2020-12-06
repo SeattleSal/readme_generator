@@ -5,25 +5,36 @@ function generateMarkdown(data) {
     let licensetext = licenses[data.license].content;
 
 return `
-README for ${data.username}
 # ${data.pname}
 ![GitHub license](https://img.shields.io/badge/license-${licenses[data.license].name}-blue.svg)
+
 ## Table of Contents
 * [Description](#description)
+* [Installation](#installation_instructions)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [License](#license)
 
 ## Description
 ${data.pdescription}
-## Links
-## Dependencies
+
+## Installation_Instructions
 The following commands should be run for dependencies: ${data.dependencies}
-## Use
+
+## Usage
 ${data.repo}
+
+## Contributing Guidelines
+${data.contribute}
+
 ## Tests
 The following commands should be run for testing: ${data.tests}
-## How to Contribute
-${data.contribute}
-## Contact
-${data.email}
+
+## Questions
+For additional questions please contact ${data.username} at ${data.email}
+Github Link: https://github.com/${data.username}
+
 ## License
 ${licensetext}`;
 
