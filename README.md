@@ -4,8 +4,8 @@
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Tests](#tests)
-* [Questions](#questions)
+* [Usage](#usage)
+* [Link](#link)
 * [License](#license)
 
 ## Description
@@ -14,21 +14,26 @@ This application creates a high-quality README for the user's application. This 
 ## Installation
 The application uses the [Inquirer package](https://www.npmjs.com/package/inquirer)
 
+Install Inquirer package using the following command:
+```bash
+npm i
+```
+
 ## Usage
 Invoke the application by using the following command:
 ```bash
 node index.js
 ```
+The user will then be prompted for inputs through the command line. See video for walkthrough:
+[![README Walkthrough](./assets/README_Generator_Walkthrough.gif)](https://drive.google.com/file/d/1KLoMAUtM56FYfUxA-nEtElN9BagG2me8/view)
 
-## Tests
-The following commands should be run for testing: npm stuff test
+![README Walkthrough](./assets/README_Generator_Walkthrough.gif)
+[Link to full walkthrough video](https://drive.google.com/file/d/1KLoMAUtM56FYfUxA-nEtElN9BagG2me8/view)
 
-## Questions
-For additional questions please contact seattlesally at sal@gmail.com
-Github Link: https://github.com/seattlesally
+## Link
+[Github Link](https://github.com/SeattleSal/readme_generator)
 
 ## License
-
 MIT License
 Copyright (c) [2020] [Sally Perez]
 
